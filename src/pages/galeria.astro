@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import NavOption from "../components/NavOption.astro";
+import Footer from "../components/Footer.astro";
+
+import Galery from "../components/Galery.astro";
+import GaleryImg from "../components/GaleryImg.astro";
+import img from "../../public/eltlacuache.jpg";
+
+const link = "https://www.facebook.com/TlacuacheNoticias?mibextid=JRoKGi",
+  nombre = "El Tlacuache";
+const articulos = await Astro.glob("./posts/*.md");
+articulos.reverse();
+---
+
+<Layout>
+  <Navbar imagen={img.src} link={"/eltlacuache/"} nombre={nombre}>
+    <NavOption link={"/eltlacuache/"} nombre={"Inicio"} />
+    <NavOption link={"/eltlacuache/galeria"} nombre={"Galeria"} />
+  </Navbar>
+  <Galery>
+    {articulos.map((x) => <GaleryImg link={x.frontmatter.imagen} />)}
+  </Galery>
+  <Footer
+    link={link}
+    nombre={"página oficial de El Tlacuache"}
+  />
+</Layout>

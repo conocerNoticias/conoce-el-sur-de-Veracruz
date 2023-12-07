@@ -6,24 +6,24 @@ import Footer from "../components/Footer.astro";
 
 import Galery from "../components/Galery.astro";
 import GaleryImg from "../components/GaleryImg.astro";
-import img from "../../public/eltlacuache.jpg";
+import img from "../../public/conocer.jpg";
 
-const link = "https://www.facebook.com/TlacuacheNoticias?mibextid=JRoKGi",
-  nombre = "El Tlacuache";
+const link = "https://www.facebook.com/ConoceSur",
+  nombre = "Conoce el sur de Veracruz";
 const articulos = await Astro.glob("./posts/*.md");
 articulos.reverse();
 ---
 
 <Layout>
-  <Navbar imagen={img.src} link={"/"} nombre={nombre}>
-    <NavOption link={"/"} nombre={"Inicio"} />
-    <NavOption link={"/galeria"} nombre={"Galeria"} />
+  <Navbar imagen={img.src} link={"/conoce-el-sur-de-Veracruz/"} nombre={nombre}>
+    <NavOption link={"/conoce-el-sur-de-Veracruz/"} nombre={"Inicio"} />
+    <NavOption link={"/conoce-el-sur-de-Veracruz/galeria"} nombre={"Galeria"} />
   </Navbar>
   <Galery>
     {articulos.map((x) => <GaleryImg link={x.frontmatter.imagen} />)}
   </Galery>
   <Footer
     link={link}
-    nombre={"página oficial de El Tlacuache"}
+    nombre={"página oficial de Conoce el sur de Veracruz"}
   />
 </Layout>

@@ -2,7 +2,7 @@
 layout: ../../layouts/PostsLayout.astro
 etiqueta: 27 de Noviembre del 2023
 titulo: 'VERACRUZ LLEVARÁ A MEXICO AL SEGUNDO PISO DE LA 4T: ROCÍO NAHLE'
-imagen: /405076109_262583760144999_7684122085802532649_n.jpg
+imagen: /conoce-el-sur-de-Veracruz/405076109_262583760144999_7684122085802532649_n.jpg
 descripcion: '*Unidos Todos celebra con Rocío Nahle.
 *Fue invitada al séptimo aniversario de Unidos Todos en el municipio de Banderilla.
 *Más de 20 mil personas se unen y festejan con Rocío Nahle.
@@ -23,5 +23,5 @@ Asimismo, saludó de manera especial a la Coordinadora de los Comités de Defens
 “¡Qué viva Rocío Nahle!¡Qué viva Veracruz!¡Qué viva la Cuarta Transformación!”, concluyó Guerrero Pérez.
 Asistieron liderazgos como Zenyazen Escobar, Claudia Tello Espinosa, Juan Javier Gómez Cazarín, Esteban Ramírez Zepeta, entre otros.'
 link: https://www.facebook.com/TlacuacheNoticias/posts/262584463478262?ref=embed_post
-redireccion: /posts/post_2
+redireccion: /conoce-el-sur-de-Veracruz/posts/post_2
 ---

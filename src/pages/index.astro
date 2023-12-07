@@ -8,26 +8,26 @@ import Title from "../components/blog/Title.astro";
 import Posts from "../components/blog/Posts.astro";
 import Card from "../components/blog/Card.astro";
 import Jumbotron from "../components/Jumbotron.astro";
-import img from "../../public/eltlacuache.jpg";
+import img from "../../public/conocer.jpg";
 
-const link = "https://www.facebook.com/TlacuacheNoticias?mibextid=JRoKGi",
-  nombre = "El Tlacuache";
+const link = "https://www.facebook.com/ConoceSur",
+  nombre = "Conoce el sur de Veracruz";
 const articulos = await Astro.glob("./posts/*.md");
 articulos.reverse();
 ---
 
 <Layout>
-  <Navbar imagen={img.src} link={"/"} nombre={nombre}>
-    <NavOption link={"/"} nombre={"Inicio"} />
-    <NavOption link={"/galeria"} nombre={"Galeria"} />
+  <Navbar imagen={img.src} link={"/conoce-el-sur-de-Veracruz/"} nombre={nombre}>
+    <NavOption link={"/conoce-el-sur-de-Veracruz/"} nombre={"Inicio"} />
+    <NavOption link={"/conoce-el-sur-de-Veracruz/galeria"} nombre={"Galeria"} />
   </Navbar>
   <Menu>
     <Title>
       <Jumbotron
-        titulo="El Tlacuache"
+        titulo="Conoce el sur de Veracruz"
         descripcion="Sitio web de noticias y medios de comunicación"
-        link="https://www.facebook.com/TlacuacheNoticias?mibextid=JRoKGi"
-        imagen="bg-[url('/352411094_1317815712278691_8596217776478060535_n.png')]"
+        link={link}
+        imagen="bg-[url('/portada.jpg')]"
       />
     </Title>
     <Posts>

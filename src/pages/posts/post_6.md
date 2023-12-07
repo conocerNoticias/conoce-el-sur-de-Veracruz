@@ -1,5 +1,5 @@
 ---
-layout: './PostsLayout.astro'
+layout: ../../layouts/PostsLayout.astro
 etiqueta: Blog
 titulo: '🍋Un limón y pal jale'
 imagen: https://scontent.fvsa3-1.fna.fbcdn.net/v/t39.30808-6/401838343_224482697325017_2930123087335812444_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEEvSZVH3ag4n060dfPTbUmMed6LnoVbxwx53ouehVvHMjVaDN2gzLQ0okBegNL5Ov1rv-xU8jpE6lXMHM175MJ&_nc_ohc=OwfpfyGe91UAX8h4949&_nc_ht=scontent.fvsa3-1.fna&oh=00_AfBKzvTnf8E77NsPgq2tIZJ5eHRu3Y_fG0iy-_Crk2JMpw&oe=655966DC

@@ -15,9 +15,9 @@ articulos.reverse();
 ---
 
 <Layout>
-  <Navbar imagen={img.src} link={"/eltlacuache/"} nombre={nombre}>
-    <NavOption link={"/eltlacuache/"} nombre={"Inicio"} />
-    <NavOption link={"/eltlacuache/galeria"} nombre={"Galeria"} />
+  <Navbar imagen={img.src} link={"/"} nombre={nombre}>
+    <NavOption link={"/"} nombre={"Inicio"} />
+    <NavOption link={"/galeria"} nombre={"Galeria"} />
   </Navbar>
   <Galery>
     {articulos.map((x) => <GaleryImg link={x.frontmatter.imagen} />)}

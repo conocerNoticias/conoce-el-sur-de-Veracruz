@@ -1,5 +1,5 @@
 ---
-layout: './PostsLayout.astro'
+layout: ../../layouts/PostsLayout.astro
 etiqueta: Blog
 titulo: '🤼Todo un ejemplo bro🥋'
 imagen: https://scontent.fvsa3-1.fna.fbcdn.net/v/t39.30808-6/401502585_224589217314365_208272078873219149_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEmZjY8bKkkV0bogI9OQcnLo1TxkHOGQxmjVPGQc4ZDGYhAAMzMcEMZqc7VkN75Tjgb-LaS0tq1Ciy1b5izCxY1&_nc_ohc=z9cELVXkPvgAX9ZkmDs&_nc_ht=scontent.fvsa3-1.fna&oh=00_AfBVw-YUtOhFN6HBSlyqlHkrA0rrQjRcsPYLZJRlRNZRVQ&oe=6559F045

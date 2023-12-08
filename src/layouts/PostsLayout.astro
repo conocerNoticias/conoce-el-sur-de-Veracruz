@@ -4,15 +4,15 @@ import Navbar from "../components/Navbar.astro";
 import NavOption from "../components/NavOption.astro";
 import Footer from "../components/Footer.astro";
 import Menu from "../components/blog/Menu.astro";
-import img from "../../public/conocer.jpg";
 
-const url = "https://www.facebook.com/ConoceSur", nombre = "Conoce el sur de Veracruz";
+const url = "https://www.facebook.com/ConoceSur", nombre = "Conoce el sur de Veracruz",
+  img = "/conoce-el-sur-de-Veracruz/conocer.jpg";
 
 const { titulo, imagen, descripcion, link } = Astro.props.frontmatter;
 ---
 
 <Layout>
-  <Navbar imagen={img.src} link={"/conoce-el-sur-de-Veracruz/"} nombre={nombre}>
+  <Navbar imagen={img} link={"/conoce-el-sur-de-Veracruz/"} nombre={nombre}>
     <NavOption link={"/conoce-el-sur-de-Veracruz/"} nombre={"Inicio"} />
     <NavOption link={"/conoce-el-sur-de-Veracruz/galeria"} nombre={"Galeria"} />
   </Navbar>

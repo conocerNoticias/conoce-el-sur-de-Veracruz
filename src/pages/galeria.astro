@@ -6,16 +6,16 @@ import Footer from "../components/Footer.astro";
 
 import Galery from "../components/Galery.astro";
 import GaleryImg from "../components/GaleryImg.astro";
-import img from "../../public/conocer.jpg";
 
 const link = "https://www.facebook.com/ConoceSur",
-  nombre = "Conoce el sur de Veracruz";
+  nombre = "Conoce el sur de Veracruz",
+  img = "/conoce-el-sur-de-Veracruz/404658806_262028086867233_4599410566007550730_n.jpg";
 const articulos = await Astro.glob("./posts/*.md");
 articulos.reverse();
 ---
 
 <Layout>
-  <Navbar imagen={img.src} link={"/conoce-el-sur-de-Veracruz/"} nombre={nombre}>
+  <Navbar imagen={img} link={"/conoce-el-sur-de-Veracruz/"} nombre={nombre}>
     <NavOption link={"/conoce-el-sur-de-Veracruz/"} nombre={"Inicio"} />
     <NavOption link={"/conoce-el-sur-de-Veracruz/galeria"} nombre={"Galeria"} />
   </Navbar>

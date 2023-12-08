@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 import Menu from "../components/blog/Menu.astro";
 import img from "../../public/conocer.jpg";
 
-const url = "https://www.facebook.com/ConoceSur", nombre = "conoceSur";
+const url = "https://www.facebook.com/ConoceSur", nombre = "Conoce el sur de Veracruz";
 
 const { titulo, imagen, descripcion, link } = Astro.props.frontmatter;
 ---
@@ -17,13 +17,13 @@ const { titulo, imagen, descripcion, link } = Astro.props.frontmatter;
     <NavOption link={"/conoce-el-sur-de-Veracruz/galeria"} nombre={"Galeria"} />
   </Navbar>
   <Menu>
-    <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+    <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white antialiased">
       <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
         <article
-          class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+          class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue">
           <header class="mb-4 lg:mb-6 not-format">
             <h1
-              class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+              class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
               {titulo}</h1>
           </header>
           <figure class="mb-4">
@@ -33,7 +33,7 @@ const { titulo, imagen, descripcion, link } = Astro.props.frontmatter;
           
           <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 mt-4">
             <a href={link} target="_blank"
-              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
               Ver en facebook
               <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                 fill="none" viewBox="0 0 14 10">

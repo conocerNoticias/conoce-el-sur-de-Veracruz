@@ -7,9 +7,9 @@ interface Props {
 }
 const { etiqueta = '', titulo = '', descripcion = '', link = ''} = Astro.props;
 ---
-<div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+<div class="bg-gray-50 border border-gray-200 rounded-lg p-8 md:p-12">
     <a href="#"
-      class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
+      class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md">
       <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
         viewBox="0 0 18 18">
         <path
@@ -18,14 +18,14 @@ const { etiqueta = '', titulo = '', descripcion = '', link = ''} = Astro.props;
       </svg>
       {etiqueta}
     </a>
-    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
+    <h2 class="text-gray-900 text-3xl font-extrabold mb-2">
       {titulo}
     </h2>
-    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">
+    <p class="text-lg font-normal text-gray-500 mb-4 line-clamp-3">
       {descripcion}
     </p>
     <a href={link}
-      class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Leer mas
+      class="text-blue-600 hover:underline font-medium text-lg inline-flex items-center">Leer mas
       <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
         viewBox="0 0 14 10">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

@@ -7,7 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://conocerNoticias.github.io',
-  base: '/conoce-el-sur-de-Veracruz',
+  base: '/',
   //output: "server",
   //adapter: netlify()
 });

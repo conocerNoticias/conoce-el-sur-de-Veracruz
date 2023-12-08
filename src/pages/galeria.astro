@@ -9,15 +9,15 @@ import GaleryImg from "../components/GaleryImg.astro";
 
 const link = "https://www.facebook.com/ConoceSur",
   nombre = "Conoce el sur de Veracruz",
-  img = "/conoce-el-sur-de-Veracruz/conocer.jpg";
+  img = "/conocer.jpg";
 const articulos = await Astro.glob("./posts/*.md");
 articulos.reverse();
 ---
 
 <Layout>
-  <Navbar imagen={img} link={"/conoce-el-sur-de-Veracruz/"} nombre={nombre}>
-    <NavOption link={"/conoce-el-sur-de-Veracruz/"} nombre={"Inicio"} />
-    <NavOption link={"/conoce-el-sur-de-Veracruz/galeria"} nombre={"Galeria"} />
+  <Navbar imagen={img} link={"/"} nombre={nombre}>
+    <NavOption link={"/"} nombre={"Inicio"} />
+    <NavOption link={"/galeria"} nombre={"Galeria"} />
   </Navbar>
   <Galery>
     {articulos.map((x) => <GaleryImg link={x.frontmatter.imagen} />)}
